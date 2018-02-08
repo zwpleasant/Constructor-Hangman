@@ -1,0 +1,24 @@
+{
+  "name": "constructor-hangman",
+  "version": "1.0.0",
+  "description": "Play the game Hangman from the command line using Node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwpleasant/constructor-hangman.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zwpleasant/constructor-hangman/issues"
+  },
+  "homepage": "https://github.com/zwpleasant/constructor-hangman#readme",
+  "dependencies": {
+    "inquirer": "^5.1.0"
+  },
+  "devDependencies": {}
+}
