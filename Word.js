@@ -1,4 +1,4 @@
-// install the required packages
+// install/require packages
 var Letter = require("./Letter.js");
 
 // constructor that depends on Letter, used to create an object representing the current word the user is attempting to guess
