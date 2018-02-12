@@ -5,11 +5,11 @@ function Letter(letterVal) {
   // boolean value that store whether that letter has been guessed or not
   this.letterGuessed = false;
   // function that returns underlying character if the letter has been guessed, or a placeholder if it has not
-  this.letterReturn = function() {
-    if (this.letterVal) {
+  this.letterReturn = function(character) {
+    if (character === this.letterVal) {
       return this.letterVal;
     } else {
-      return "-";
+      return " - ";
     }
   };
   // function that takes a character and checks it against the underlying character, updating the stored boolean value to true if it was guessed
@@ -21,9 +21,3 @@ function Letter(letterVal) {
 };
 
 module.exports = Letter;
-
-// checking validity
-
-Letter("A");
-
-letterCheck("B");

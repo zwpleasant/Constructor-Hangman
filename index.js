@@ -9,10 +9,12 @@ var wordBank = ["orange", "blue", "green", "yellow", "red", "white", "black", "b
 var word = wordBank[Math.floor(Math.random() * wordBank.length)];
 // set that chosen word as the word for the game
 var gameWord = new Word(word);
-console.log(gameWord);
 
 // start the inquirer for user guesses
 function playGame() {
+  // display the chosen word and its status
+  console.log(gameWord.wordToString());
+  // inquirer prompt
   inquirer.prompt([
     {
       message: "To guess a letter, type one here!",
@@ -22,8 +24,8 @@ function playGame() {
   ]).then(function(answer) {
     var userAnswers = answer.userInput;
     gameWord.characterGuess(userAnswers);
+    // need to put an if-else statement with directions on how to proceed with the guesses and how to properly show the content of gameWord.wordToString()
   })
-
 }
 
 playGame();
