@@ -24,6 +24,6 @@ module.exports = Letter;
 
 // checking validity
 
-// Letter("A");
-//
-// letterCheck("B");
+Letter("A");
+
+letterCheck("B");
