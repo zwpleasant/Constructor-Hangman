@@ -2,10 +2,8 @@
 function Letter(letterVal) {
   // string value to store the underlying character for the letter
   this.letterVal = letterVal;
-  console.log(letterVal);
   // boolean value that store whether that letter has been guessed or not
   this.letterGuessed = false;
-  console.log(letterGuessed);
   // function that returns underlying character if the letter has been guessed, or a placeholder if it has not
   this.letterReturn = function() {
     if (this.letterVal) {
@@ -24,6 +22,8 @@ function Letter(letterVal) {
 
 module.exports = Letter;
 
-Letter("A");
+// checking validity
 
-letterCheck("B");
+// Letter("A");
+//
+// letterCheck("B");
