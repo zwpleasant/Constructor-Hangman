@@ -6,7 +6,7 @@ function Letter(letterVal) {
   this.letterGuessed = false;
   // function that returns underlying character if the letter has been guessed, or a placeholder if it has not
   this.letterReturn = function(character) {
-    if (character === this.letterVal) {
+    if (this.letterGuessed === true) {
       return this.letterVal;
     } else {
       return " - ";
@@ -14,7 +14,7 @@ function Letter(letterVal) {
   };
   // function that takes a character and checks it against the underlying character, updating the stored boolean value to true if it was guessed
   this.letterCheck = function(userGuess) {
-    if (userGuess === this.letterVal) {
+    if (this.letterVal === userGuess) {
       this.letterGuessed === true;
     }
   };
